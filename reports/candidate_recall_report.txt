@@ -1,0 +1,1 @@
+Candidate recall was not measured on the full training dataset. No candidate recall or candidate-count result is claimed. Run `python main.py train` in an environment with sufficient memory and disk space to generate measured JSON and text reports.

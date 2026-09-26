@@ -1,0 +1,44 @@
+{
+  "train_source1.tsv": {
+    "rows": 2206821,
+    "empty_name": 0,
+    "empty_address": 0,
+    "empty_country": 0,
+    "short_name_le_3": 561,
+    "long_name_ge_200": 0,
+    "numeric_heavy_name": 12479,
+    "unique_countries": 2,
+    "top_countries": {
+      "US": 1323633,
+      "India": 883188
+    }
+  },
+  "train_source2.tsv": {
+    "rows": 5034616,
+    "empty_name": 0,
+    "empty_address": 168967,
+    "empty_country": 0,
+    "short_name_le_3": 2946,
+    "long_name_ge_200": 0,
+    "numeric_heavy_name": 75460,
+    "unique_countries": 2,
+    "top_countries": {
+      "US": 3016817,
+      "India": 2017799
+    }
+  },
+  "train_source3.tsv": {
+    "rows": 5285603,
+    "empty_name": 0,
+    "empty_address": 175916,
+    "empty_country": 0,
+    "short_name_le_3": 17006,
+    "long_name_ge_200": 0,
+    "numeric_heavy_name": 78388,
+    "unique_countries": 2,
+    "top_countries": {
+      "US": 3170056,
+      "India": 2115547
+    }
+  }
+}

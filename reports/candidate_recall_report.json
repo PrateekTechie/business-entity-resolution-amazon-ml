@@ -1,0 +1,12 @@
+{
+  "status": "not_run",
+  "reason": "The full candidate-generation job was not run; this environment reports zero free disk space and the candidate pipeline has not been profiled at challenge scale.",
+  "candidate_recall": null,
+  "source_recall": null,
+  "country_recall": null,
+  "all_match_entity_coverage": null,
+  "zero_retrieved_true_match_entities": null,
+  "candidate_pairs": null,
+  "false_candidate_pairs": null,
+  "candidates_per_entity": null
+}

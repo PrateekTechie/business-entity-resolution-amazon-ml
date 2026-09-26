@@ -1,0 +1,31 @@
+{
+  "business_suffixes": {
+    "pvt": "private",
+    "ltd": "limited",
+    "pvt.": "private",
+    "ltd.": "limited",
+    "inc": "incorporated",
+    "inc.": "incorporated",
+    "corp": "corporation",
+    "corp.": "corporation",
+    "co": "company",
+    "co.": "company",
+    "llp": "limited liability partnership",
+    "tech": "technology",
+    "technologies": "technology",
+    "soln": "solutions",
+    "solutions": "solutions",
+    "svcs": "services",
+    "services": "services"
+  },
+  "address_terms": {
+    "st": "street",
+    "st.": "street",
+    "rd": "road",
+    "rd.": "road",
+    "ave": "avenue",
+    "blvd": "boulevard",
+    "flr": "floor",
+    "apt": "apartment"
+  }
+}

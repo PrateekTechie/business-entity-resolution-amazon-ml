@@ -1,0 +1,7 @@
+pandas==3.0.1
+numpy==2.2.6
+scikit-learn==1.8.0
+xgboost==3.2.0
+rapidfuzz==3.14.6
+PyYAML==6.0.3
+psutil==7.2.2

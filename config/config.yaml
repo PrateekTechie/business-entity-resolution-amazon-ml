@@ -1,0 +1,40 @@
+storage:
+  root: D:/AmazonMLChallenge2026
+  temp_dir: D:/AmazonMLChallenge2026/artifacts/temp
+  chunk_size: 50000
+
+data_paths:
+  train_source1: D:/AmazonMLChallenge2026/data/train/train_source1.tsv
+  train_source2: D:/AmazonMLChallenge2026/data/train/train_source2.tsv
+  train_source3: D:/AmazonMLChallenge2026/data/train/train_source3.tsv
+  train_ground_truth: D:/AmazonMLChallenge2026/data/train/train_ground_truth.tsv
+  test_source1: D:/AmazonMLChallenge2026/data/test/test_source1.tsv
+  test_source2: D:/AmazonMLChallenge2026/data/test/test_source2.tsv
+  test_source3: D:/AmazonMLChallenge2026/data/test/test_source3.tsv
+  processed_dir: D:/AmazonMLChallenge2026/artifacts/features
+  candidates_dir: D:/AmazonMLChallenge2026/artifacts/candidates
+  predictions_dir: D:/AmazonMLChallenge2026/artifacts/predictions
+  reports_dir: D:/AmazonMLChallenge2026/artifacts/reports
+  output_dir: D:/AmazonMLChallenge2026/submission/output
+  database_dir: D:/AmazonMLChallenge2026/artifacts/cache
+
+challenge:
+  test_dir: D:/AmazonMLChallenge2026/data/test
+  validator: D:/AmazonMLChallenge2026/challenge_resource/utils/validate_submission.py
+
+blocking:
+  max_candidates_per_entity: null
+  max_group_size: 100
+  max_pairs_per_block: null
+
+features:
+  chunk_size: 25000
+
+model:
+  checkpoint_path: D:/AmazonMLChallenge2026/artifacts/models/xgboost_matcher.json
+  random_state: 42
+  validation_thresholds: 25
+
+benchmark:
+  rows_per_source: 50000
+  feature_rows: 250000

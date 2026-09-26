@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Challenge data
+data/raw/*.tsv
+
+# Large/local artifacts
+*.zip
+*.sqlite
+*.sqlite-*
+*.db
+*.wal
+*.shm
+
+# Local model binaries
+*.pkl
+*.joblib
+
+# Generated CSV artifacts
+*.csv
+
+# Packaging/build artifacts
+entity_resolution_pipeline.egg-info/
+
+# Local generated directories
+data/processed/
+data/candidates/
+data/predictions/
+artifacts/
+results/
+
+# Secrets / OS
+.env
+.DS_Store
+Thumbs.db
