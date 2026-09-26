@@ -1,0 +1,47 @@
+{
+  "sample_s1_entities": 100000,
+  "available_true_target_s1_entities": 6452,
+  "available_true_match_pairs": 6672,
+  "recovered_true_match_pairs": 6557,
+  "missed_true_match_pairs": 115,
+  "pair_candidate_recall": 0.982763788968825,
+  "complete_match_entities": 6339,
+  "complete_match_entity_coverage": 0.9824860508369497,
+  "at_least_one_match_entities": 6345,
+  "at_least_one_match_entity_coverage": 0.9834159950402975,
+  "retrieval_families": {
+    "exact_normalized_name": {
+      "recovered_true_pairs": 1597,
+      "candidate_pairs_attributed": 22408
+    },
+    "compact_name": {
+      "recovered_true_pairs": 1643,
+      "candidate_pairs_attributed": 23312
+    },
+    "informative_rare_token": {
+      "recovered_true_pairs": 4440,
+      "candidate_pairs_attributed": 8301553
+    },
+    "token_pair": {
+      "recovered_true_pairs": 4310,
+      "candidate_pairs_attributed": 2177153
+    },
+    "name_plus_address_token": {
+      "recovered_true_pairs": 4988,
+      "candidate_pairs_attributed": 98657
+    },
+    "name_plus_address_number": {
+      "recovered_true_pairs": 4162,
+      "candidate_pairs_attributed": 1456799
+    },
+    "address_based": {
+      "recovered_true_pairs": 6109,
+      "candidate_pairs_attributed": 9192818
+    },
+    "fuzzy_fallback": {
+      "recovered_true_pairs": 4,
+      "candidate_pairs_attributed": 554
+    }
+  },
+  "target_present_misses_tsv": "C:\\Users\\HP\\Downloads\\AMC\\AMC\\reports\\person3_bench_100k_target_present_misses.tsv"
+}

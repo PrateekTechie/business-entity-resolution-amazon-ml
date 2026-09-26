@@ -30,6 +30,27 @@ python main.py validate
 python main.py package
 ```
 
+Person 3's independent resumable retrieval builder writes into a separate
+`artifacts/person3` tree. It does not touch existing pipeline SQLite caches.
+Omit the sample flag for a full split build; test mode also streams and
+validates the Stage 5 candidate TSV while retaining Source 1 rows with no
+candidates:
+
+```powershell
+python main.py person3-train
+python main.py person3-test
+```
+
+For a limited diagnostic, add `--person3-rows-per-source 5000`. Retrieval uses
+exact, compact, Unicode ASCII-folded, order-free token signature,
+corpus-rare token and token-pair, exact/address-token, name/address, and
+bounded token-prefix fuzzy families. Country keys are supporting evidence;
+base retrieval remains open-set. Oversized blocks are omitted under the
+configurable `--person3-max-block-pairs` setting and counted in the training
+miss audit. Each candidate stores backward-compatible `block_flags` and
+separate `retrieval_flags`; the Person 2 Stage 3 `features` schema uses the
+same 62 feature columns.
+
 For an existing integrated SQLite cache that already contains candidates, skip upstream ingestion and blocking with explicit candidate-only commands:
 
 ```powershell
@@ -49,4 +70,4 @@ Candidate-only mode requires an explicit existing SQLite DB. Training requires i
 
 The source row counts are 2,206,821 / 5,034,616 / 5,285,603 for train S1/S2/S3 and 1,732,544 / 4,887,273 / 5,082,316 for test S1/S2/S3. The configured blocking policy is `max_group_size: 100`; recall and candidate distribution must be read from the measured report at `D:/AmazonMLChallenge2026/artifacts/reports/candidate_recall_report.json`. Validation metrics, model counts, test statistics, and validator status are reported under the same D: reports directory after their respective stages complete. No full-run metric is asserted here unless a generated report supports it.
 
-The pipeline has passed the repository's ten synthetic unit tests. Full-data retrieval, validation, inference, official validation, and packaging status are determined by their generated reports and artifacts, not by the synthetic tests. Stage 3–5 sample evidence and limitations are documented in `reports/stage3_5_handoff.md`.
+The repository's 15 synthetic unit tests pass. Person 3's verified 100,000-row-per-source SQLite audit, target-present recall, candidate volume, and limitations are documented in `reports/person3_candidate_retrieval_report.md`. Full-data retrieval, validation, inference, official validation, and packaging status are determined by their generated reports and artifacts, not by the synthetic tests. Stage 3–5 sample evidence and limitations are documented in `reports/stage3_5_handoff.md`.

@@ -1,0 +1,701 @@
+{
+  "benchmark_database": "D:\\AmazonMLChallenge2026\\artifacts\\person3\\bench_100k_v3\\train\\candidate.sqlite",
+  "miss_count": 115,
+  "category_counts": {
+    "address_token_not_selected_as_informative": 31,
+    "fuzzy_prefix_candidate_not_retrieved": 12,
+    "no_shared_generated_retrieval_key": 4,
+    "oversized_block_budget_suppression": 68
+  },
+  "category_definitions": {
+    "oversized_block_budget_suppression": "Shared generated retrieval keys exist, but every direct retrieval-family block for this pair is over the configured 50,000-pair limit.",
+    "address_token_not_selected_as_informative": "Raw address-token overlap exists, but the token was not selected into the informative address-token retrieval family.",
+    "fuzzy_prefix_candidate_not_retrieved": "A bounded token-prefix key is shared, but no exact/selected evidence key is shared; fuzzy scoring did not add the pair.",
+    "no_shared_generated_retrieval_key": "No applicable retrieval key was shared after normalization and key selection."
+  },
+  "examples_by_category": {
+    "oversized_block_budget_suppression": [
+      {
+        "source1_entity_id": "S1-101808393",
+        "target_entity_id": "S3-831226768",
+        "source_id": 3,
+        "raw_s1_name": "Williams Silicon LLC",
+        "raw_target_name": "Williams Siliino LLC",
+        "raw_s1_address": "338 Vance Avenue, Fair Grove, MO",
+        "raw_target_address": "",
+        "shared_key_kinds": [
+          6,
+          7,
+          10
+        ],
+        "shared_blocks": [
+          {
+            "kind": 6,
+            "reference_df": 248,
+            "target_df": 375,
+            "pair_product": 93000,
+            "within_budget": false
+          },
+          {
+            "kind": 7,
+            "reference_df": 248,
+            "target_df": 375,
+            "pair_product": 93000,
+            "within_budget": false
+          },
+          {
+            "kind": 10,
+            "reference_df": 36,
+            "target_df": 64,
+            "pair_product": 2304,
+            "within_budget": true
+          },
+          {
+            "kind": 10,
+            "reference_df": 371,
+            "target_df": 616,
+            "pair_product": 228536,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 141,
+        "normalized_name_WRatio": 90.0
+      },
+      {
+        "source1_entity_id": "S1-111220253",
+        "target_entity_id": "S2-505328569",
+        "source_id": 2,
+        "raw_s1_name": "SA Multiple Private Limited",
+        "raw_target_name": "Limited SA Private Services",
+        "raw_s1_address": "4-B, Hansalaya, 15, Barakhambaroad, New Delhi, Delhi",
+        "raw_target_address": "NEW DELHI, 4-B, Delhi",
+        "shared_key_kinds": [
+          8,
+          12
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 5132,
+            "target_df": 12966,
+            "pair_product": 66541512,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 5690,
+            "target_df": 10211,
+            "pair_product": 58100590,
+            "within_budget": false
+          },
+          {
+            "kind": 12,
+            "reference_df": 1798,
+            "target_df": 3556,
+            "pair_product": 6393688,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 7,
+        "normalized_name_WRatio": 76.0
+      },
+      {
+        "source1_entity_id": "S1-117954160",
+        "target_entity_id": "S2-641059184",
+        "source_id": 2,
+        "raw_s1_name": "North Business Pvt Ltd",
+        "raw_target_name": "नॉर्थ बिजनेस प्रा. लि.",
+        "raw_s1_address": "Room No 13, Laxmi Nagar Nr Bedrock Company, Link Road, Goregaon, Mumbai, Mumbai City, Maharashtra",
+        "raw_target_address": "ROM NO 13/4, MUMBAI, MUMBAI CITY, महाराष्ट्र",
+        "shared_key_kinds": [
+          8,
+          12
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 3923,
+            "target_df": 7051,
+            "pair_product": 27661073,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 6638,
+            "target_df": 12573,
+            "pair_product": 83459574,
+            "within_budget": false
+          },
+          {
+            "kind": 12,
+            "reference_df": 630,
+            "target_df": 1318,
+            "pair_product": 830340,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 43,
+        "normalized_name_WRatio": 13.500000000000002
+      },
+      {
+        "source1_entity_id": "S1-12377410",
+        "target_entity_id": "S2-600115417",
+        "source_id": 2,
+        "raw_s1_name": "RM Functional Corporation",
+        "raw_target_name": "Iriarc",
+        "raw_s1_address": "No. 56, K No 105, Raghavendra Nagar, 2Nd Cr, Bangalore South, Bangalore, Karnataka",
+        "raw_target_address": "H.NO 56, BANGALORE SOUTH, BANGALORE, Karnataka",
+        "shared_key_kinds": [
+          8,
+          12
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 2582,
+            "target_df": 4679,
+            "pair_product": 12081178,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 2654,
+            "target_df": 4101,
+            "pair_product": 10884054,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 3119,
+            "target_df": 2478,
+            "pair_product": 7728882,
+            "within_budget": false
+          },
+          {
+            "kind": 12,
+            "reference_df": 191,
+            "target_df": 352,
+            "pair_product": 67232,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 322,
+        "normalized_name_WRatio": 31.090909090909093
+      },
+      {
+        "source1_entity_id": "S1-125527550",
+        "target_entity_id": "S2-158687922",
+        "source_id": 2,
+        "raw_s1_name": "Sun Global Limited",
+        "raw_target_name": "সান গ্লোবাল লিমিটেড",
+        "raw_s1_address": "11, Rasik Lal Banerjee Lane, Bally Jagachha, Howrah, West Bengal",
+        "raw_target_address": "NO 155 11, HOWRAH, পশ্চিমবঙ্গ",
+        "shared_key_kinds": [
+          8,
+          12
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 1307,
+            "target_df": 1515,
+            "pair_product": 1980105,
+            "within_budget": false
+          },
+          {
+            "kind": 12,
+            "reference_df": 887,
+            "target_df": 1663,
+            "pair_product": 1475081,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 40,
+        "normalized_name_WRatio": 10.81081081081081
+      }
+    ],
+    "address_token_not_selected_as_informative": [
+      {
+        "source1_entity_id": "S1-104786845",
+        "target_entity_id": "S2-598592918",
+        "source_id": 2,
+        "raw_s1_name": "High Finance Private Limited",
+        "raw_target_name": "हाई फाइनेंस प्राइवेट लिमिटेड",
+        "raw_s1_address": "Badaun, Post Bairmai Khurd Tehsil Bilsi, C/O - Suneel Kumar Vill Girdharpur, Uttar Pradesh",
+        "raw_target_address": "C/O - SUNEEL KUMAR VILL GIRDHARPUR, BADAUN, उत्तर प्रदेश",
+        "shared_key_kinds": [
+          8
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 12,
+            "target_df": 19,
+            "pair_product": 228,
+            "within_budget": true
+          },
+          {
+            "kind": 8,
+            "reference_df": 392,
+            "target_df": 738,
+            "pair_product": 289296,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 2,
+            "target_df": 1,
+            "pair_product": 2,
+            "within_budget": true
+          },
+          {
+            "kind": 8,
+            "reference_df": 1,
+            "target_df": 6,
+            "pair_product": 6,
+            "within_budget": true
+          },
+          {
+            "kind": 8,
+            "reference_df": 439,
+            "target_df": 724,
+            "pair_product": 317836,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 220,
+        "normalized_name_WRatio": 10.71428571428571
+      },
+      {
+        "source1_entity_id": "S1-120829625",
+        "target_entity_id": "S3-212500256",
+        "source_id": 3,
+        "raw_s1_name": "Shiv Care Private Limited",
+        "raw_target_name": "சிவ் கேர் பிரைவேட் லிமிடெட்",
+        "raw_s1_address": "Krishna Complex, Plot No 34Poothapedu Main Road Nsc Bose Nagar, Porur, Chennai, Thiruvallur, Tamil Nadu",
+        "raw_target_address": "Thiruvallur, Chennai, TN, Krishna Complex",
+        "shared_key_kinds": [
+          8
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 435,
+            "target_df": 678,
+            "pair_product": 294930,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 1211,
+            "target_df": 1871,
+            "pair_product": 2265781,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 38,
+            "target_df": 82,
+            "pair_product": 3116,
+            "within_budget": true
+          },
+          {
+            "kind": 8,
+            "reference_df": 1387,
+            "target_df": 2461,
+            "pair_product": 3413407,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 191,
+        "normalized_name_WRatio": 11.538461538461542
+      },
+      {
+        "source1_entity_id": "S1-224888768",
+        "target_entity_id": "S2-121767107",
+        "source_id": 2,
+        "raw_s1_name": "Star Investments Private Limited",
+        "raw_target_name": "स्टार इन्वेस्टमेंट्स प्राइवेट लिमिटेड",
+        "raw_s1_address": "40, Manga Market, Near Main Post Office, Kalkaji Kalkaji Extension, New Delhi, South West Delhi, Delhi",
+        "raw_target_address": "दिल्ली, SOUTH WEST DELHI, NEW DELHI, 39",
+        "shared_key_kinds": [
+          8
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 5950,
+            "target_df": 7681,
+            "pair_product": 45701950,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 2654,
+            "target_df": 4101,
+            "pair_product": 10884054,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 5132,
+            "target_df": 12966,
+            "pair_product": 66541512,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 5690,
+            "target_df": 10211,
+            "pair_product": 58100590,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 67,
+        "normalized_name_WRatio": 8.695652173913048
+      },
+      {
+        "source1_entity_id": "S1-235827905",
+        "target_entity_id": "S3-245041126",
+        "source_id": 3,
+        "raw_s1_name": "Sai Infotech Private Limited",
+        "raw_target_name": "साईं इंफोटेक प्राइवेट लिमिटेड",
+        "raw_s1_address": "Patna, Bihar, 709, 7Th Floor, Jagat Trade Centre Maurya Lok, Fraser Road",
+        "raw_target_address": "707, Patna, Boring Road, Patna, BR",
+        "shared_key_kinds": [
+          8
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 439,
+            "target_df": 772,
+            "pair_product": 338908,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 75,
+        "normalized_name_WRatio": 10.526315789473683
+      },
+      {
+        "source1_entity_id": "S1-330213669",
+        "target_entity_id": "S2-662027862",
+        "source_id": 2,
+        "raw_s1_name": "Al Properties Private Limited",
+        "raw_target_name": "अल प्रॉपर्टीज प्राइवेट लिमिटेड",
+        "raw_s1_address": "S. No.7, Near Pyramid Hot, Bhosari, Pune City, Pune, Maharashtra",
+        "raw_target_address": "S. NO.8, PUNE CITY, PUNE, Maharashtra",
+        "shared_key_kinds": [
+          8
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 8710,
+            "target_df": 6948,
+            "pair_product": 60517080,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 6638,
+            "target_df": 12573,
+            "pair_product": 83459574,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 1921,
+            "target_df": 3312,
+            "pair_product": 6362352,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 56,
+        "normalized_name_WRatio": 10.169491525423723
+      }
+    ],
+    "fuzzy_prefix_candidate_not_retrieved": [
+      {
+        "source1_entity_id": "S1-122745024",
+        "target_entity_id": "S2-805398335",
+        "source_id": 2,
+        "raw_s1_name": "Cardiology Diamond Specialists",
+        "raw_target_name": "diamondcardiologyspecialists.com",
+        "raw_s1_address": "100 Abbott Park Road, Unit DEPARTMENT 49K, North Chicago, IL",
+        "raw_target_address": "100A ABBOTT PARK ROAD, NORTH CHICAGO, IL",
+        "shared_key_kinds": [
+          8,
+          10
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 15,
+            "target_df": 18,
+            "pair_product": 270,
+            "within_budget": true
+          },
+          {
+            "kind": 8,
+            "reference_df": 493,
+            "target_df": 851,
+            "pair_product": 419543,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 2158,
+            "target_df": 7629,
+            "pair_product": 16463382,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 2322,
+            "target_df": 3949,
+            "pair_product": 9169578,
+            "within_budget": false
+          },
+          {
+            "kind": 10,
+            "reference_df": 288,
+            "target_df": 438,
+            "pair_product": 126144,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 48,
+        "normalized_name_WRatio": 67.74193548387098
+      },
+      {
+        "source1_entity_id": "S1-22556602",
+        "target_entity_id": "S2-158486419",
+        "source_id": 2,
+        "raw_s1_name": "Abramson Digitalbridge",
+        "raw_target_name": "abramsondigitalbridge.com",
+        "raw_s1_address": "415 Bent Way Road, Marble Falls, TX",
+        "raw_target_address": "15 BENT WAY ROAD, MARBLEF ALLS CDP, TX",
+        "shared_key_kinds": [
+          8,
+          10
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 1403,
+            "target_df": 2675,
+            "pair_product": 3753025,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 18,
+            "target_df": 41,
+            "pair_product": 738,
+            "within_budget": true
+          },
+          {
+            "kind": 10,
+            "reference_df": 13,
+            "target_df": 37,
+            "pair_product": 481,
+            "within_budget": true
+          }
+        ],
+        "current_s1_candidate_count": 159,
+        "normalized_name_WRatio": 89.36170212765957
+      },
+      {
+        "source1_entity_id": "S1-283014052",
+        "target_entity_id": "S2-555511376",
+        "source_id": 2,
+        "raw_s1_name": "Safe All Esports LLC",
+        "raw_target_name": "@safeall",
+        "raw_s1_address": "730 Harrison Street, Trenton, IL",
+        "raw_target_address": "0730 HARRISON STREET, PMB 1283, TRENTON, IL",
+        "shared_key_kinds": [
+          8,
+          10
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 27,
+            "target_df": 45,
+            "pair_product": 1215,
+            "within_budget": true
+          },
+          {
+            "kind": 8,
+            "reference_df": 99,
+            "target_df": 169,
+            "pair_product": 16731,
+            "within_budget": true
+          },
+          {
+            "kind": 10,
+            "reference_df": 355,
+            "target_df": 637,
+            "pair_product": 226135,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 122,
+        "normalized_name_WRatio": 77.14285714285715
+      },
+      {
+        "source1_entity_id": "S1-296400262",
+        "target_entity_id": "S3-758487195",
+        "source_id": 3,
+        "raw_s1_name": "Pediatric Center LLC",
+        "raw_target_name": "@pediatriccenter",
+        "raw_s1_address": "Amarillo, 2001 6th Avenue, TX",
+        "raw_target_address": "6rd Avenue, Aamrillo, Texas",
+        "shared_key_kinds": [
+          10
+        ],
+        "shared_blocks": [
+          {
+            "kind": 10,
+            "reference_df": 785,
+            "target_df": 1524,
+            "pair_product": 1196340,
+            "within_budget": false
+          }
+        ],
+        "current_s1_candidate_count": 230,
+        "normalized_name_WRatio": 85.71428571428572
+      },
+      {
+        "source1_entity_id": "S1-382021457",
+        "target_entity_id": "S3-979925158",
+        "source_id": 3,
+        "raw_s1_name": "Saboo Vision Ltd",
+        "raw_target_name": "Mr saboovision.com",
+        "raw_s1_address": "97 Ff, Village Katwaria Sarai, New Delhi, South West Delhi, Delhi",
+        "raw_target_address": "186 Ff, New Delhi, DL",
+        "shared_key_kinds": [
+          8,
+          10
+        ],
+        "shared_blocks": [
+          {
+            "kind": 8,
+            "reference_df": 5132,
+            "target_df": 12966,
+            "pair_product": 66541512,
+            "within_budget": false
+          },
+          {
+            "kind": 8,
+            "reference_df": 5690,
+            "target_df": 10211,
+            "pair_product": 58100590,
+            "within_budget": false
+          },
+          {
+            "kind": 10,
+            "reference_df": 3,
+            "target_df": 9,
+            "pair_product": 27,
+            "within_budget": true
+          }
+        ],
+        "current_s1_candidate_count": 210,
+        "normalized_name_WRatio": 68.42105263157895
+      }
+    ],
+    "no_shared_generated_retrieval_key": [
+      {
+        "source1_entity_id": "S1-238200430",
+        "target_entity_id": "S2-855633517",
+        "source_id": 2,
+        "raw_s1_name": "Global Institute",
+        "raw_target_name": "GLOBAL CENTER",
+        "raw_s1_address": "25700 21, Town Of La Grange, WI",
+        "raw_target_address": "",
+        "shared_key_kinds": [],
+        "shared_blocks": [],
+        "current_s1_candidate_count": 60,
+        "normalized_name_WRatio": 68.96551724137932
+      },
+      {
+        "source1_entity_id": "S1-48720115",
+        "target_entity_id": "S3-707278997",
+        "source_id": 3,
+        "raw_s1_name": "Jay Technology Private Limited",
+        "raw_target_name": "Jaytechnology.Com (ID: 81435)",
+        "raw_s1_address": "1B, Spring Waters, Kunnukadu, Kovallam Village Opp Hotel Taj Vivantha, Ecr, Chengalput T, Aluk, Kancheepuram, Tamil Nadu",
+        "raw_target_address": "Block A-404 1B, Chengalpattu, TN",
+        "shared_key_kinds": [],
+        "shared_blocks": [],
+        "current_s1_candidate_count": 212,
+        "normalized_name_WRatio": 60.71428571428572
+      },
+      {
+        "source1_entity_id": "S1-905609035",
+        "target_entity_id": "S2-258730821",
+        "source_id": 2,
+        "raw_s1_name": "QR Brothers Private Limited",
+        "raw_target_name": "QR Private Limited Services",
+        "raw_s1_address": "39/3, Vasaga Salai St, P.Pet, Salem, Tamil Nadu",
+        "raw_target_address": "",
+        "shared_key_kinds": [],
+        "shared_blocks": [],
+        "current_s1_candidate_count": 133,
+        "normalized_name_WRatio": 77.4074074074074
+      },
+      {
+        "source1_entity_id": "S1-912576916",
+        "target_entity_id": "S2-570493783",
+        "source_id": 2,
+        "raw_s1_name": "W 8 Precision Mobile",
+        "raw_target_name": "W 8",
+        "raw_s1_address": "141 Beach Road, Unit 21, Salisbury, MA",
+        "raw_target_address": "",
+        "shared_key_kinds": [],
+        "shared_blocks": [],
+        "current_s1_candidate_count": 237,
+        "normalized_name_WRatio": 90.0
+      }
+    ]
+  },
+  "block_budget": 50000,
+  "family_disabled_ablation": {
+    "candidate_volume_and_available_pair_recall": {
+      "all_families": {
+        "candidate_pairs": 20365018,
+        "available_true_pairs_recovered": 6557,
+        "available_true_pair_recall": 0.982763788968825
+      },
+      "without_rare_token_only": {
+        "candidate_pairs": 12778806,
+        "available_true_pairs_recovered": 6517,
+        "available_true_pair_recall": 0.9767685851318945
+      },
+      "without_address_token_only": {
+        "candidate_pairs": 17325887,
+        "available_true_pairs_recovered": 6198,
+        "available_true_pair_recall": 0.9289568345323741
+      },
+      "without_country_address_number_only": {
+        "candidate_pairs": 15022639,
+        "available_true_pairs_recovered": 6513,
+        "available_true_pair_recall": 0.9761690647482014
+      },
+      "without_broad_single_signal_families_7_9_12": {
+        "candidate_pairs": 3810802,
+        "available_true_pairs_recovered": 5645,
+        "available_true_pair_recall": 0.8460731414868106
+      }
+    },
+    "candidate_mask_removed": 2368,
+    "disabled_families": [
+      7,
+      9,
+      12
+    ]
+  },
+  "per_pair_diagnostics_tsv": "C:\\Users\\HP\\Downloads\\AMC\\AMC\\reports\\person3_miss_category_analysis.tsv"
+}
